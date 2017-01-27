@@ -4,7 +4,9 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello World!";
+    for(int a=0;a<4;a++){
+        cout << "Hello World ("<< (a*a) <<")!";
+    }
     return 0;
 }
 
