@@ -21,3 +21,8 @@ task(hello) {
         println "hello"
     }
 }
+task(hello2) {
+    doLast {
+        println "hello2"
+    }
+}
