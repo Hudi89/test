@@ -1,6 +1,8 @@
-#include <iostream.h>
+#include <iostream>
 
-main()
+using namespace std;
+
+int main()
 {
     cout << "Hello World!";
     return 0;
