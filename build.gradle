@@ -1,4 +1,7 @@
 apply plugin: 'java'
+dependencies {
+    testCompile "junit:junit:4.11"
+}
 sourceSets {
    main {
       java {
@@ -11,4 +14,10 @@ sourceSets {
          srcDir 'test'
       }
    }
+}
+
+task(hello) {
+    doLast {
+        println "hello"
+    }
 }
