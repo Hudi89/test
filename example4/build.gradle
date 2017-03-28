@@ -30,5 +30,3 @@ task(hello2) {
     }
 }
 
-build.dependsOn.add("runFinalJar")
-
