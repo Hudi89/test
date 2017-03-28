@@ -1,3 +1,6 @@
+
+defaultTasks 'count', 'intro'
+
 task count {
     doLast {
         4.times { print "$it " }
@@ -6,8 +9,11 @@ task count {
 
 
 task hello {
+    doFirst{
+        println 'Hello'
+    }
     doLast {
-        println 'Hello world!'
+        println 'world!'
     }
 }
 task intro(dependsOn: hello) {
