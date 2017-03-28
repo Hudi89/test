@@ -29,3 +29,6 @@ task(hello2) {
         println "hello2"
     }
 }
+
+build.dependsOn.add("runFinalJar")
+

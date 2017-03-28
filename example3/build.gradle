@@ -1,31 +1,6 @@
 apply plugin: 'java'
-repositories {
-    jcenter()
-}
-dependencies {
-    testCompile 'junit:junit:4.11'
-}
-sourceSets {
-   main {
-      java {
-         srcDir 'src'
-      }
-   }
-   
-   test {
-      java {
-         srcDir 'test'
-      }
-   }
-}
 
-task(hello) {
-    doLast {
-        println "hello"
-    }
-}
-task(hello2) {
-    doLast {
-        println "hello2"
-    }
+task(run, dependsOn: 'classes', type: JavaExec) {
+    main = 'org.eit.Main'
+    classpath = sourceSets.main.runtimeClasspath
 }
