@@ -1,6 +1,1 @@
 apply plugin: 'java'
-
-task(run, dependsOn: 'classes', type: JavaExec) {
-    main = 'org.eit.Main'
-    classpath = sourceSets.main.runtimeClasspath
-}
