@@ -26,4 +26,6 @@ https://docs.gradle.org/current/userguide/userguide.html
 
 http://[Your server url and port]/github-webhook/
 
-:)
+# Idea 
+
+http://stackoverflow.com/questions/36435598/gradle-not-downloading-dependencies-in-intellij-idea
