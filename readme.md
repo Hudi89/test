@@ -25,3 +25,5 @@ https://docs.gradle.org/current/userguide/userguide.html
 # Github hook url
 
 http://[Your server url and port]/github-webhook/
+
+:)
