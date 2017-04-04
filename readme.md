@@ -62,6 +62,8 @@ https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/By.html
 
 https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/WebDriver.html
 
+https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/WebElement.html
+
 ## Exercises 
 
 http://selenium.thinkcode.se/

@@ -21,8 +21,8 @@ public class Main {
 
         boolean result;
         try {
-            assertTrue(requestPasswordTest("Hudi"));
-            assertTrue(requestPasswordTest("Other"));
+            requestPasswordTest("Hudi");
+            requestPasswordTest("Other");
         } catch(Exception e) {
             fail(e.getMessage());
         } finally {
@@ -30,15 +30,12 @@ public class Main {
         }
     }
 
-    private static boolean requestPasswordTest(String username) {
+    private static void requestPasswordTest(String username) {
         driver.get("http://selenium.thinkcode.se/requestPassword");
-        //type search query
-        driver.findElement(By.id("account")).sendKeys(username);
 
-        // click search
+        driver.findElement(By.id("account")).sendKeys(username);
         driver.findElement(By.xpath("//form[@id='conversion']//input[@name='submit']")).click();
 
-        // Wait for search to complete
         wait.until(new ExpectedCondition<Boolean>() {
             public Boolean apply(WebDriver webDriver) {
                 System.out.println("Searching ...");
@@ -46,7 +43,6 @@ public class Main {
             }
         });
 
-        // Look for QAAutomation.net in the results
-        return driver.findElement(By.id("confirmation")).getText().contains("A new password has been sent to "+username);
+        assertTrue(driver.findElement(By.id("confirmation")).getText().contains("A new password has been sent to "+username));
     }
 }
