@@ -9,11 +9,6 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-/**
- * Search Google example.
- *
- * @author Rahul
- */
 public class Main {
     static WebDriver driver;
     static Wait<WebDriver> wait;
@@ -21,42 +16,37 @@ public class Main {
     @Test
     public void mainTest() {
         driver = new FirefoxDriver();
-        // https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/support/ui/WebDriverWait.html
         wait = new WebDriverWait(driver, 30);
-        driver.get("http://www.google.com/");
+
 
         boolean result;
         try {
-            result = firstPageContainsQAANet();
+            assertTrue(requestPasswordTest("Hudi"));
+            assertTrue(requestPasswordTest("Other"));
         } catch(Exception e) {
-            e.printStackTrace();
-            result = false;
+            fail(e.getMessage());
         } finally {
             driver.close();
         }
-
-        System.out.println("Test " + (result? "passed." : "failed."));
-        if (!result) {
-            System.exit(1);
-        }
     }
 
-    private static boolean firstPageContainsQAANet() {
+    private static boolean requestPasswordTest(String username) {
+        driver.get("http://selenium.thinkcode.se/requestPassword");
         //type search query
-        driver.findElement(By.name("q")).sendKeys("qa automation\n");
+        driver.findElement(By.id("account")).sendKeys(username);
 
         // click search
-        driver.findElement(By.name("btnG")).click();
+        driver.findElement(By.xpath("//form[@id='conversion']//input[@name='submit']")).click();
 
         // Wait for search to complete
         wait.until(new ExpectedCondition<Boolean>() {
             public Boolean apply(WebDriver webDriver) {
                 System.out.println("Searching ...");
-                return webDriver.findElement(By.id("resultStats")) != null;
+                return webDriver.findElement(By.id("confirmation")) != null;
             }
         });
 
         // Look for QAAutomation.net in the results
-        return driver.findElement(By.tagName("body")).getText().contains("qaautomation.net");
+        return driver.findElement(By.id("confirmation")).getText().contains("A new password has been sent to "+username);
     }
 }
