@@ -8,6 +8,10 @@ https://aws.amazon.com/free/
 DigitalOcean:
 https://education.github.com/pack
 
+### Login with Putty
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html?icmpid=docs_ec2_console
+
 ## Installing Jenkins 
 
 https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+on+Ubuntu
