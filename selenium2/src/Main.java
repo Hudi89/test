@@ -18,9 +18,10 @@ public class Main {
         driver = new ChromeDriver();
         driver.get("http://selenium.thinkcode.se/helloWorld");
 
+
         boolean result;
         try {
-            assertTrue(driver.findElement(By.id("headline")).getText().contains("Hello, world!"));
+            assertTrue(driver.findElement(By.id("headline")).getText().contains("Hello, worldasd!"));
         } catch(Exception e) {
             fail(e.getMessage());
         } finally {
