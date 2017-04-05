@@ -20,7 +20,8 @@ public class Main {
 
     @Test
     public void mainTest() {
-        driver = new FirefoxDriver();
+        System.setProperty("webdriver.chrome.driver", "c:/Users/hupqaai/chromedriver.exe");
+        driver = new ChromeDriver();
         // https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/support/ui/WebDriverWait.html
         wait = new WebDriverWait(driver, 30);
         driver.get("http://www.google.com/");

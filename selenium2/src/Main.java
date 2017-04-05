@@ -14,7 +14,8 @@ public class Main {
 
     @Test
     public void mainTest() {
-        driver = new FirefoxDriver();
+        System.setProperty("webdriver.chrome.driver", "c:/Users/hupqaai/chromedriver.exe");
+        driver = new ChromeDriver();
         driver.get("http://selenium.thinkcode.se/helloWorld");
 
         boolean result;

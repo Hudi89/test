@@ -44,6 +44,8 @@ This is clearly a bug, which started manifesting itself since I upgraded to Inte
 
 # Selenium
 
+Chrome Webdriver: https://sites.google.com/a/chromium.org/chromedriver/downloads
+
 ## HTML 
 
 https://www.w3schools.com/html/html_basic.asp
