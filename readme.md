@@ -48,8 +48,6 @@ This is clearly a bug, which started manifesting itself since I upgraded to Inte
 
 # Selenium
 
-Chrome Webdriver: https://sites.google.com/a/chromium.org/chromedriver/downloads
-
 ## HTML 
 
 https://www.w3schools.com/html/html_basic.asp
@@ -57,6 +55,14 @@ https://www.w3schools.com/html/html_basic.asp
 ## XPath
 
 http://www.freeformatter.com/xpath-tester.html
+
+## Getting started
+
+https://github.com/SeleniumHQ/selenium/wiki/Getting-Started
+
+(The gradle download the jar file for us)
+
+Chrome Webdriver: https://sites.google.com/a/chromium.org/chromedriver/downloads
 
 ## Selenium basic example
 
@@ -73,4 +79,6 @@ https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/WebEleme
 ## Exercises 
 
 http://selenium.thinkcode.se/
+
+
 
