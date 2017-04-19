@@ -64,6 +64,8 @@ https://github.com/SeleniumHQ/selenium/wiki/Getting-Started
 
 Chrome Webdriver: https://sites.google.com/a/chromium.org/chromedriver/downloads
 
+Or webdriver managaement: https://github.com/bonigarcia/webdrivermanager
+
 ## Selenium basic example
 
 http://www.qaautomation.net/?p=263
