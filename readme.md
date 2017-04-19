@@ -94,3 +94,13 @@ https://github.com/kschiller/page-object-pattern-tutorial
 ## Idea Shortcuts
 
 https://www.jetbrains.com/help/idea/2017.1/keyboard-shortcuts-you-cannot-miss.html
+
+## Assignment
+
+### Form
+
+https://docs.google.com/forms/d/e/1FAIpQLSdNZw0S4KoQPNVvt3XpxLP5xgEXJvPaCSKYXjPKFZ_A8NxidA/viewform?usp=sf_link
+
+### Responses
+
+https://docs.google.com/spreadsheets/d/1yGjfr_y0fEfnzmEiY7SQJ3hi8yTzIDh_hSHAPHRceyw/edit?usp=sharing
