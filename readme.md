@@ -88,3 +88,5 @@ http://selenium.thinkcode.se/
 
 
 ## PageObject with PageFactory
+
+https://github.com/kschiller/page-object-pattern-tutorial
