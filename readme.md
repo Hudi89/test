@@ -90,3 +90,7 @@ http://selenium.thinkcode.se/
 ## PageObject with PageFactory
 
 https://github.com/kschiller/page-object-pattern-tutorial
+
+## Idea Shortcuts
+
+https://www.jetbrains.com/help/idea/2017.1/keyboard-shortcuts-you-cannot-miss.html
