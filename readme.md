@@ -60,7 +60,7 @@ http://www.freeformatter.com/xpath-tester.html
 
 https://github.com/SeleniumHQ/selenium/wiki/Getting-Started
 
-(The gradle download the jar file for us)
+(The gradle downloads the jar file for us)
 
 Chrome Webdriver: https://sites.google.com/a/chromium.org/chromedriver/downloads
 
