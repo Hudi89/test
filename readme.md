@@ -70,6 +70,10 @@ Or webdriver managaement: https://github.com/bonigarcia/webdrivermanager
 
 http://www.qaautomation.net/?p=263
 
+### Waits
+
+http://www.guru99.com/implicit-explicit-waits-selenium.html
+
 ## Classes
 
 https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/By.html
@@ -81,6 +85,5 @@ https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/WebEleme
 ## Exercises 
 
 http://selenium.thinkcode.se/
-
 
 
