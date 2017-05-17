@@ -34,6 +34,11 @@ https://docs.gradle.org/current/userguide/tutorial_using_tasks.html
 
 https://docs.gradle.org/current/userguide/userguide.html
 
+## Gradle install problem fix
+
+http://stackoverflow.com/questions/22307516/gradle-finds-wrong-java-home-even-though-its-correctly-set
+
+
 # Idea problem fixes
 
 http://stackoverflow.com/questions/36435598/gradle-not-downloading-dependencies-in-intellij-idea
